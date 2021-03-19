@@ -17,6 +17,9 @@ $colors: (
   "black": #222222,
 );
 
+$red: #CC0000;
+$main: #110011;
+
 $global-primary-background: map_get($colors, "primary");
 $global-secondary-background: map_get($colors, "secondary");
 $global-danger-background: map_get($colors, "danger");

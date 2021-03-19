@@ -9,12 +9,19 @@
         <meta name="description" content="{{ this.page.meta_description }}">
         <link rel="icon" type="image/png" href="{{ 'assets/public/images/october.png'|theme }}">
         <link rel="stylesheet" href="{{ mix('/public/css/theme.css') }}">
+    <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         {% styles %}
 
         <script type="text/javascript" src="{{ mix('/public/js/manifest.js') }}"></script>
         <script type="text/javascript" src="{{ mix('/public/js/vendor.js') }}"></script>
     </head>
-    <body class="theme-{{ this.theme.id }}">
+    <body id="body" class="theme-{{ this.theme.id }}">
         
         <main class="main-content">
             {% page %}

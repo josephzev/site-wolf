@@ -1,0 +1,96 @@
+title = "About"
+url = "/about"
+layout = "default"
+is_hidden = 0
+==
+
+<!-- nav modal -->
+
+<div id="modalnav" class="nav-small uk-modal-full" uk-modal style="background-color: #110011">
+    <div class="uk-modal-dialog">
+        <button class="close-nav uk-modal-close-default"  style="color: white;" type="button" uk-close></button>
+        <div class="uk-height-viewport uk-flex uk-flex-middle uk-flex-center uk-text-center" uk-height-viewport="offset-top: true" style="background-color: #110011">
+            <div class="uk-width-auto uk-text-large uk-text-normal">
+                <ul class="uk-nav uk-nav-default uk-light" >
+                    <li class=""><a class="nav-link-small uk-text-large" style="color: white;" href="{{ 'contact' | page }}">
+                        <div uk-toggle="target: #con; cls: red; mode: hover; duration:500; " id="con">CONTACT</div></a></li>
+                     <li class="uk-nav-divider"></li>
+                    <li><a class="nav-link-small uk-text-large" style="color: white;" href="{{ 'about' | page }}">
+                        <div uk-toggle="target: #ab; cls: red; mode: hover; duration:500; " id="ab">ABOUT</div></a></li>
+                     
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+<!-- nav large -->
+
+   <div class=" uk-position-top" >
+        <nav  class="nav-large uk-position-z-index uk-navbar-container uk-navbar-transparent uk-visible@m" uk-navbar>
+            <div class=" uk-navbar-left">
+                <a class="logo uk-navbar-item uk-logo" href="{{ 'home' | page }}"><span style="background-color: #CC0000; padding:5px;color:white; 
+                    font-size: 20px;">The Website Wolf</span></a>
+            </div>
+            <div class="uk-dark uk-margin-right uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class=""><a class="uk-link-reset" style="cursor: default;" href="{{ 'about' | page }}"><div class="nav-link" uk-toggle="target: #about; cls: red; mode: hover; duration:500; " id="about" style="color:#CC0000;">ABOUT</div></a></li>
+                    <li><a class="uk-link-reset" style="cursor: default;"  href="{{ 'contact' | page }}" ><div class="nav-link" uk-toggle="target: #contact; cls: red; mode: hover; duration:500; " id="contact">CONTACT</div></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- nav small -->
+    
+    <div class="uk-position-top">
+        <nav id="nav" class="uk-height-veiwport nav-small uk-navbar-container uk-navbar-transparent uk-hidden@m" uk-sticky uk-navbar >
+            <div class="uk-light uk-navbar-left">
+                <a class="logo uk-navbar-item uk-logo" href="#"><span style="background-color: #CC0000; padding:5px;">The Website Wolf</span></a>
+            </div>
+            <div class="uk-light uk-margin-right uk-navbar-right">
+                <a class="uk-navbar-toggle" style="color: black;" uk-navbar-toggle-icon uk-toggle href="#modalnav"></a>
+            </div>
+        </nav>
+    </div>
+
+
+<!-- about-sec -->
+
+<div class="uk-height-viewport uk-child-width-1-1 uk-flex-middle uk-flex uk-flex-center" uk-grid>
+	<div class="uk-visible@s uk-flex-middle uk-flex uk-flex-center uk-height-viewport" style="position: absolute;">
+		<h1 class="about">ABOUT</h1>
+	</div>
+	<div class="uk-visible@s uk-grid-match uk-height-large uk-child-width-1-2@s" uk-grid>
+		<div class="uk-background-cover uk-flex uk-flex-center uk-flex-middle" data-src="./storage/app/media/me-sunset.jpg" uk-img >
+		</div>
+		<div class="uk-flex uk-flex-middle">
+			<p class="para">
+				Hi, I'm Yosef, a freelancer based in israel, as a digital nomad I'm used to catering to international clients, focusing on their exact niche.
+				I've been developing software for 5 years, focusing on websites and app design.
+				I enjoy the prosses of taking my clients visions and giving them form in a functional and attractive way, whether its for business or a persanol project.
+				When im not coding you'l find me persuing my passions - hiking, rock clibming, reading the classics, making music etc..
+		   </p>
+		</div>
+	</div>
+
+	<!-- for small screen -->
+
+	<div class="uk-hidden@s uk-child-width-1-1" uk-grid>
+		<div class="uk-margin-left uk-height-medium uk-background-cover uk-flex uk-flex-center uk-flex-middle" data-src="./storage/app/media/me-sunset.jpg" uk-img>
+		</div>
+		<div class="uk-flex uk-flex-middle" style="position: relative;">
+			<div class="uk-hidden@s uk-child-width-1-1 uk-flex-middle uk-flex uk-flex-center" style="position: absolute;width:90%;">
+				<h1 class="about">ABOUT</h1>
+	        </div>
+			<p class="para uk-margin-remove">
+				Hi, I'm Yosef, a freelancer based in israel, as a digital nomad I'm used to catering to international clients, focusing on their exact niche.
+				I've been developing software for 5 years, focusing on websites and app design.
+				I enjoy the prosses of taking my clients visions and giving them form in a functional and attractive way, whether its for business or a persanol project.
+				When im not coding you'l find me persuing my passions - hiking, rock clibming, reading the classics, making music etc..
+		   </p>
+		</div>
+	</div>
+</div>
