@@ -16,10 +16,12 @@ is_hidden = 0
             <div class="uk-width-auto uk-text-large uk-text-normal">
                 <ul class="uk-nav uk-nav-default uk-light" >
                     <li class=""><a class="nav-link-small uk-text-large" style="color: white;" href="{{ 'contact' | page }}">
-                        <div uk-toggle="target: #con; cls: red; mode: hover; duration:500; " id="con">CONTACT</div></a></li>
+                        <div uk-toggle="target: #con; cls: red; mode: hover; duration:500;  mode: media; media: @s; " id="con">CONTACT</div>
+
+                    </a></li>
                      <li class="uk-nav-divider"></li>
                     <li><a class="nav-link-small uk-text-large" style="color: white;" href="{{ 'about' | page }}">
-                        <div uk-toggle="target: #ab; cls: red; mode: hover; duration:500; " id="ab">ABOUT</div></a></li>
+                        <div uk-toggle="target: #ab; cls: red; mode: hover; duration:500; mode: media; media: @s;  " id="ab">ABOUT</div></a></li>
                      
                 </ul>
             </div>
@@ -72,7 +74,7 @@ is_hidden = 0
     <div class="uk-position-top">
         <nav id="nav2" class="uk-height-veiwport nav-small uk-navbar-container uk-navbar-transparent uk-hidden@m" uk-sticky uk-navbar >
             <div class="uk-light uk-navbar-left">
-                <a class="logo uk-navbar-item uk-logo" href="#"><span style="background-color: #CC0000; padding:5px;">The Website Wolf</span></a>
+                <a class="logo uk-navbar-item uk-logo" href="{{ 'home' | page }}"><span style="background-color: #CC0000; padding:5px;">The Website Wolf</span></a>
             </div>
             <div class="uk-light uk-margin-right uk-navbar-right">
                 <a class="uk-navbar-toggle" style="color: white;" uk-navbar-toggle-icon uk-toggle href="#modalnav"></a>
@@ -86,19 +88,20 @@ is_hidden = 0
     <div id="section2" href="#second-section" uk-scrollspy="repeat:true;" class="non-clickable uk-height-viewport" style="position: absolute;"> 
     </div> 
     <div class="" style="background-color: #8f8f8f;">
-        <div class="uk-width-1-1 uk-background-cover uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-blend-multiply" style="mix-blend-mode: multiply;" data-src="{{ 'top-rock.jpg' | media }}" uk-img>>
+        <div class="uk-width-1-1 uk-background-cover uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-blend-multiply" style="mix-blend-mode: multiply; background-image: url(./storage/app/media/top-rock.jpg);" >
         </div>
     </div>
     <div class="info-sec uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column" style="color: white; position:absolute;">
-        <div class="uk-margin-bottom">
+        <div class="margin uk-margin-bottom">
             <h3 class="strong-s" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; delay:;">"Perfection in the smallest details"</h3>
 
             <h2 class="powerfull-s uk-heading-medium" uk-scrollspy="cls:uk-animation-fade; repeat:true; delay: " >Beautiful layouts</h2>
 
             <hr uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; delay: 200">
              
-            <div class="p-sec">
+            <div class="p-sec" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; ">
                 <p><span uk-icon="check"></span> Responsive for mobile</p>
+                <p><span uk-icon="check"></span> Custom design </p>
             </div>
         </div>
     </div>
@@ -107,22 +110,23 @@ is_hidden = 0
 <!-- third section -->
 
 <div  class="uk-section uk-margin-remove-top uk-height-viewport uk-flex-middle uk-flex uk-flex-center uk-child-width-1-1" uk-grid  >
+    <!-- scroll -->
     <div id="section3" href="#third-section" uk-scrollspy="repeat:true;" class="non-clickable uk-height-viewport" style="position: absolute;"> 
-    </div> 
+    </div>
     <div class="" style="background-color: #8f8f8f;">
         <div class="uk-width-1-1 uk-background-cover uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-blend-multiply" style=" mix-blend-mode: multiply;" data-src="./storage/app/media/pie.jpg" uk-img>>
         </div>
     </div>
     <div class="info-sec uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column" style="color: white; position:absolute;">
         <div class="uk-margin-bottom">
-            <h3 class="strong-s" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; delay:;">"Relentless responsibility for your security"</h3>
+            <h3 class="strong-s" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; delay:;">"Long-running Maintenance and CMS enabled"</h3>
 
-            <h2  class="powerfull-s uk-heading-medium" uk-scrollspy="cls:uk-animation-fade; repeat:true; delay: " >Secure Payments</h2>
+            <h2  class="powerfull-s uk-heading-medium" uk-scrollspy="cls:uk-animation-fade; repeat:true; delay: " >Ecommerce sites</h2>
 
             <hr uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; delay: 200">
              
 
-            <div class="p-sec">
+            <div class="p-sec" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; ">
                 <p><span uk-icon="check"></span> Paypal or any other gateway </p>
                 <p><span uk-icon="check"></span> Direct card integration </p>
             </div>

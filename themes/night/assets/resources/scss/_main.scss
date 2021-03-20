@@ -4,6 +4,11 @@
 html{
        font-family: 'Source Sans Pro', sans-serif;
 }
+body{
+	@media (min-width: $breakpoint-small) {
+	        overflow-x: hidden;
+	    }
+}
 
 .non-clickable{
 	    pointer-events: none;
@@ -142,7 +147,12 @@ html{
 	text-align:center;
 	padding-top: 60px;
 
-	
+	.margin{
+		margin-bottom:20px ;
+		@media (min-width: $breakpoint-small) {
+	        margin-bottom: 85px;
+	    }
+	}
 
 	.powerfull-s{
 		font-family: 'Source Sans Pro', sans-serif;
@@ -153,10 +163,13 @@ html{
 	    font-weight: 300;
 	    letter-spacing: 1.8px;
         margin:0;
+        margin-bottom:40px;
         color:white;
         font-size: 65px;
 
-
+        @media (min-width: $breakpoint-small) {
+	        margin-bottom:0px;
+	    }
         @media (min-width: $breakpoint-medium) {
 	        font-weight :400px;
 	        font-size: 75px;
@@ -171,6 +184,7 @@ html{
 
 		font-family: 'Source Sans Pro', sans-serif;
         margin:0;
+        margin-bottom:10px;
         color:white;
 	    letter-spacing: 2px;
 	    text-transform: uppercase;
@@ -180,6 +194,7 @@ html{
 
 	    @media (min-width: $breakpoint-small) {
 	        font-size: 25px;
+	        margin:0;
 	    }
 		
 		@media (min-width: $breakpoint-medium) {
@@ -190,7 +205,7 @@ html{
 	hr{
         margin:auto;
         margin-top: 20px;
-        margin-bottom:25px;
+        margin-bottom:45px;
         width:50px;
         color:white;
         border-top: 4px solid #e5e5e5;

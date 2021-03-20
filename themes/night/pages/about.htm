@@ -13,10 +13,10 @@ is_hidden = 0
             <div class="uk-width-auto uk-text-large uk-text-normal">
                 <ul class="uk-nav uk-nav-default uk-light" >
                     <li class=""><a class="nav-link-small uk-text-large" style="color: white;" href="{{ 'contact' | page }}">
-                        <div uk-toggle="target: #con; cls: red; mode: hover; duration:500; " id="con">CONTACT</div></a></li>
+                        <div uk-toggle="target: #con; cls: red; mode: hover; duration:500;  mode: media; media: @s; " id="con">CONTACT</div></a></li>
                      <li class="uk-nav-divider"></li>
                     <li><a class="nav-link-small uk-text-large" style="color: white;" href="{{ 'about' | page }}">
-                        <div uk-toggle="target: #ab; cls: red; mode: hover; duration:500; " id="ab">ABOUT</div></a></li>
+                        <div uk-toggle="target: #ab; cls: red; mode: hover; duration:500;  mode: media; media: @s; " id="ab">ABOUT</div></a></li>
                      
                 </ul>
             </div>
@@ -48,7 +48,7 @@ is_hidden = 0
     <div class="uk-position-top">
         <nav id="nav" class="uk-height-veiwport nav-small uk-navbar-container uk-navbar-transparent uk-hidden@m" uk-sticky uk-navbar >
             <div class="uk-light uk-navbar-left">
-                <a class="logo uk-navbar-item uk-logo" href="#"><span style="background-color: #CC0000; padding:5px;">The Website Wolf</span></a>
+                <a class="logo uk-navbar-item uk-logo" href="{{ 'home' | page }}"><span style="background-color: #CC0000; padding:5px;">The Website Wolf</span></a>
             </div>
             <div class="uk-light uk-margin-right uk-navbar-right">
                 <a class="uk-navbar-toggle" style="color: black;" uk-navbar-toggle-icon uk-toggle href="#modalnav"></a>
