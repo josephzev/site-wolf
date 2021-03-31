@@ -75,21 +75,13 @@ body{
     position: absolute;
 }
 .scroll-2{
-	position: absolute;
-    margin-top:100px;
-    margin-bottom:100px;
-	@media (min-width: $breakpoint-small){   
+	position: absolute; 
          margin-top:10px;
-         margin-bottom:10px;
-	}
-	
+         margin-bottom:10px;	
 }
 .scroll-3{
 	position: absolute;
-	height:200px;
-	@media (min-width: $breakpoint-small){
 		height:20px;
-	}
 }
 
 /*main*/

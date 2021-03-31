@@ -29,15 +29,26 @@ __webpack_require__(/*! ./bootstrap */ "./assets/resources/js/bootstrap.js");
 /* YOUR CODE HERE */
 
 
+var mediaQuery = window.matchMedia('(max-width: 768px)');
 UIkit.util.on('#sec2', 'inview', function () {
   UIkit.scroll('#section2').scrollTo('#section2');
-  document.getElementById("body").style.overflowY = "hidden";
+
+  if (mediaQuery.matches) {
+    document.getElementById("body").style.overflowY = "hidden";
+  }
 });
 UIkit.util.on('#sec1', 'inview', function () {
   UIkit.scroll('#section1').scrollTo('#section1');
 });
 UIkit.util.on('#sec3', 'inview', function () {
   UIkit.scroll('#section3').scrollTo('#section3');
+
+  if (mediaQuery.matches) {
+    document.getElementById("body").style.overflowY = "hidden";
+  }
+});
+UIkit.util.on('#section3', 'scrolled', function () {
+  document.getElementById("body").style.overflowY = "visible";
 });
 UIkit.util.on('#secfinal', 'inview', function () {
   UIkit.scroll('#sectionfinal').scrollTo('#sectionfinal');
