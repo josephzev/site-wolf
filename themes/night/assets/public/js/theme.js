@@ -31,6 +31,7 @@ __webpack_require__(/*! ./bootstrap */ "./assets/resources/js/bootstrap.js");
 
 UIkit.util.on('#sec2', 'inview', function () {
   UIkit.scroll('#section2').scrollTo('#section2');
+  document.getElementById("body").style.overflowY = "hidden";
 });
 UIkit.util.on('#sec1', 'inview', function () {
   UIkit.scroll('#section1').scrollTo('#section1');
@@ -57,6 +58,7 @@ UIkit.util.on('#section2', 'scrolled', function () {
   UIkit.scrollspy('#sec1', {
     repeat: true
   });
+  document.getElementById("body").style.overflowY = "visible";
 });
 
 /***/ }),

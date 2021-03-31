@@ -13,7 +13,7 @@ require('./bootstrap');
 UIkit.util.on('#sec2', 'inview', function () {
     
         UIkit.scroll('#section2').scrollTo('#section2');
-        
+        document.getElementById("body").style.overflowY = "hidden";
 
 });
 
@@ -60,6 +60,10 @@ UIkit.util.on('#section2', 'scrolled', function () {
             UIkit.scrollspy('#sec1', {
 	    		repeat:true
 	    	});
+
+	    	document.getElementById("body").style.overflowY = "visible";
+
+
 
 });
 
