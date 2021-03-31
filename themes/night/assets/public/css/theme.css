@@ -12339,13 +12339,24 @@ html {
 
 .scroll-2 {
   position: absolute;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+@media (min-width: 640px) {
+  .scroll-2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .scroll-3 {
   position: absolute;
-  height: 20px;
+  height: 200px;
+}
+@media (min-width: 640px) {
+  .scroll-3 {
+    height: 20px;
+  }
 }
 
 /*main*/
