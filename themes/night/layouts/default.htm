@@ -1,3 +1,4 @@
+[googleTracker]
 ==
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +27,8 @@
         <main class="main-content">
             {% page %}
         </main>
+        
+        {% component 'googleTracker' %}
         
         <script type="text/javascript" src="{{ mix('/public/js/theme.js') }}"></script>
         {% scripts %}
