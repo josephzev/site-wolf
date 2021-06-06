@@ -28,8 +28,14 @@ body{
 .logo-design{
 	height: 58px;
     width: auto;
-    margin-left: 41px;
-    margin-top: -2px;
+    margin-left: 8px;
+    margin-top: 0px;
+    @media (min-width: $breakpoint-medium) {
+	    height: 66px;
+		width: auto;
+		margin-left: 12px;
+		margin-top: 0px;
+    }
 }
 .logo{
 	font-family: 'Montserrat', sans-serif;
@@ -181,8 +187,9 @@ body{
 	    }
 	}
 	span{
-		color: #CC0000;
-        font-weight: 600;
+		color: #fff;
+		font-weight: 600;
+		text-shadow: 0.5px 0.5px #cc0000;
 	}
 	.powerfull-s{
 		font-family: 'Source Sans Pro', sans-serif;
