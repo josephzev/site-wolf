@@ -12281,6 +12281,13 @@ body {
   background-color: #110011;
 }
 
+.logo-design {
+  height: 58px;
+  width: auto;
+  margin-left: 41px;
+  margin-top: -2px;
+}
+
 .logo {
   font-family: "Montserrat", sans-serif;
 }
