@@ -10,7 +10,7 @@
                 <ul class="uk-navbar-nav">
                     <li class=""><a class="uk-link-reset" style="cursor: default;" href="{{ 'about' | page }}"><div class="nav-link" uk-toggle="target: #about; cls: red; mode: hover; duration:500; " id="about">ABOUT</div></a></li>
                     <li><a class="uk-link-reset" style="cursor: default;"  href="{{ 'contact' | page }}" ><div class="nav-link" uk-toggle="target: #contact; cls: red; mode: hover; duration:500; " id="contact">CONTACT</div></a></li>
-                    <li><a class="uk-link-reset" style="cursor: default;"  href="{{ 'faq' | page }}" ><div class="nav-link" uk-toggle="target: #services; cls: red; mode: hover; duration:500; " id="services">FAQ</div></a></li>
+                    <li><a class="uk-link-reset" style="cursor: default;"  href="{{ 'faq' | page }}" ><div class="nav-link {% if this.page.id == 'faq' %} active {% endif %}" uk-toggle="target: #services; cls: red; mode: hover; duration:500; " id="services">FAQ</div></a></li>
                 </ul>
             </div>
         </nav>
@@ -34,7 +34,7 @@
 <div id="modalnav" class="nav-small uk-modal-full" uk-modal style="background-color: #000">
     <div class="uk-modal-dialog">
         <button class="close-nav uk-modal-close-default"  style="color: white;" type="button" uk-close></button>
-        <div class="uk-height-viewport uk-flex uk-flex-middle uk-flex-center uk-text-center" uk-height-viewport="offset-top: true" style="background-color: #110011">
+        <div class="uk-height-viewport uk-flex uk-flex-middle uk-flex-center uk-text-center" uk-height-viewport="offset-top: true" style="background-color: #000">
             <div class="uk-width-auto uk-text-large uk-text-normal">
                 <ul class="uk-nav uk-nav-default uk-light" >
                     <li class=""><a class="nav-link-small uk-text-large" style="color: white;" href="{{ 'contact' | page }}">
