@@ -1,4 +1,3 @@
-[googleTracker]
 ==
 <!DOCTYPE html>
 <html lang="en">
@@ -22,13 +21,12 @@
         <script type="text/javascript" src="{{ mix('/public/js/manifest.js') }}"></script>
         <script type="text/javascript" src="{{ mix('/public/js/vendor.js') }}"></script>
     </head>
-    <body id="body" class="theme-{{ this.theme.id }}">
+    <body id="body" class="theme-{{ this.theme.id }} {% if this.page.id == 'services' %} overflow-none {% endif %}">
         
         <main class="main-content">
             {% page %}
         </main>
         
-        {% component 'googleTracker' %}
         
         <script type="text/javascript" src="{{ mix('/public/js/theme.js') }}"></script>
         {% scripts %}

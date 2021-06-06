@@ -7,136 +7,62 @@ is_hidden = 0
 
 <!-- test -->
 
-<!-- nav modal -->
+<!-- nav -->
 
-<div id="modalnav" class="nav-small uk-modal-full" uk-modal style="background-color: #110011">
-    <div class="uk-modal-dialog">
-        <button class="close-nav uk-modal-close-default"  style="color: white;" type="button" uk-close></button>
-        <div class="uk-height-viewport uk-flex uk-flex-middle uk-flex-center uk-text-center" uk-height-viewport="offset-top: true" style="background-color: #110011">
-            <div class="uk-width-auto uk-text-large uk-text-normal">
-                <ul class="uk-nav uk-nav-default uk-light" >
-                    <li class=""><a class="nav-link-small uk-text-large" style="color: white;" href="{{ 'contact' | page }}">
-                        <div uk-toggle="target: #con; cls: red; mode: hover; duration:500;  mode: media; media: @s; " id="con">CONTACT</div>
-
-                    </a></li>
-                     <li class="uk-nav-divider"></li>
-                    <li><a class="nav-link-small uk-text-large" style="color: white;" href="{{ 'about' | page }}">
-                        <div uk-toggle="target: #ab; cls: red; mode: hover; duration:500; mode: media; media: @s;  " id="ab">ABOUT</div></a></li>
-                     
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    </div>
-</div>
+{% partial 'nav' %}
 
 <!-- main section -->
 
-<div id="" class="uk-section uk-light uk-height-viewport uk-flex-middle uk-flex uk-flex-center" style="background-color: #110011">
+<div id="" class="uk-section uk-light uk-height-viewport uk-flex-middle uk-flex uk-flex-center uk-child-width-1-1" uk-grid >
+
+
 
         <!-- <div id="section1"  class="non-clickable uk-height-viewport" style="position: absolute; width: 100px;">  
         </div>  -->
 
         <!-- scroll -->
 
-        <div id="section1" class="scroll-1 non-clickable uk-height-viewport" style="width:100px;"> 
+        <div id="section1" class="uk-margin-remove scroll-1 non-clickable uk-height-viewport" style="width:100px;"> 
         </div>
         <div id="sec1"  class="scroll-2 non-clickable uk-height-viewport" uk-height-viewport="offset-bottom: true;" style="width:100px;"> 
         </div> 
         <div  class="scroll-3 non-clickable" style="width:100px;"> 
         </div>
 
+        <div class="uk-position-cover uk-margin-remove uk-padding-remove" style="background-color: #8f8f8f;">
+            <div class="uk-width-1-1 uk-background-cover uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-blend-multiply" style="mix-blend-mode: multiply;" data-src="./storage/app/media/ship.jpg" uk-img >
+            </div>
+        </div>
 
-        <div class="top-width uk-margin-large-bottom uk-light uk-container">
+
+        <div class="top-width uk-margin-large-bottom uk-light uk-container uk-text-center">
             
                 <h1 class="uk-text-center powerfull uk-heading-medium uk-text-bold" uk-scrollspy="cls:uk-animation-slide-bottom; delay:200; repeat:true;">
-                    Powerful Websites
+                    Websites with Personality 
                 </h1>
             
-            <h2 class="uk-margin-remove uk-text-center strong heading-small" uk-scrollspy="cls:uk-animation-fade; delay:600; repeat:true;">
-                Building a Strong Online Presence 
-            </h2>
+            <!-- <h2 class="uk-text-center strong heading-small" uk-scrollspy="cls:uk-animation-fade; delay:600; repeat:true;">
+                Build a Strong Online Presence 
+            </h2> -->
             <p class="uk-position-bottom uk-text-center uk-margin-large-bottom" uk-scrollspy="cls:uk-animation-slide-bottom; delay:1200; repeat:true;">
-                <a href="#section2" uk-scroll class="arrow uk-margin-large-top  uk-visible@s" uk-icon="icon: chevron-down; ratio: 2" >
-                    
+                <a href="#section2" uk-scroll class="arrow uk-margin-large-top  uk-visible@s" uk-icon="icon: chevron-down; ratio: 2" >   
                 </a>
             </p>
        </div>
        
 </div>
 
-    <!-- nav large -->
 
-   <div class=" uk-position-top" >
-        <nav id="nav1" class="nav-large uk-position-z-index uk-navbar-container uk-navbar-transparent uk-visible@m" uk-sticky uk-navbar >
-            <div class="uk-light uk-navbar-left">
-                <a class="logo uk-navbar-item uk-logo" href="{{ 'home' | page }}"><span style="background-color: #CC0000; padding:5px;">The Website Wolf</span></a>
-            </div>
-            <div class="uk-light uk-margin-right uk-navbar-right">
-                <ul class="uk-navbar-nav">
-                    <li class=""><a class="uk-link-reset" style="cursor: default;" href="{{ 'about' | page }}"><div class="nav-link" uk-toggle="target: #about; cls: red; mode: hover; duration:500; " id="about">ABOUT</div></a></li>
-                    <li><a class="uk-link-reset" style="cursor: default;"  href="{{ 'contact' | page }}" ><div class="nav-link" uk-toggle="target: #contact; cls: red; mode: hover; duration:500; " id="contact">CONTACT</div></a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <!-- nav small -->
-    
-    <div class="uk-position-top">
-        <nav id="nav2" class="uk-height-veiwport nav-small uk-navbar-container uk-navbar-transparent uk-hidden@m" uk-sticky uk-navbar >
-            <div class="uk-light uk-navbar-left">
-                <a class="logo uk-navbar-item uk-logo" href="{{ 'home' | page }}"><span style="background-color: #CC0000; padding:5px;">The Website Wolf</span></a>
-            </div>
-            <div class="uk-light uk-margin-right uk-navbar-right">
-                <a class="uk-navbar-toggle" style="color: white;" uk-navbar-toggle-icon uk-toggle href="#modalnav"></a>
-            </div>
-        </nav>
-    </div>
 
 <!-- second section -->
 
-<div  class="uk-section uk-height-viewport uk-flex-middle uk-flex uk-flex-center uk-child-width-1-1" uk-grid  >
+<div  class=" uk-height-viewport uk-flex-middle uk-flex uk-flex-center uk-child-width-1-1 uk-margin-remove" >
 
     <!-- scroll -->
 
-    <div id="section2" href="#second-section" class="scroll-1 non-clickable uk-height-viewport" > 
+    <div id="section2" href="#second-section" class="scroll-1 non-clickable uk-height-viewport uk-padding-remove" > 
     </div>
     <div id="sec2"  uk-scrollspy="repeat:true;" class="scroll-2 non-clickable uk-height-viewport" uk-height-viewport="offset-bottom: true;"> 
-    </div> 
-    <div  class="scroll-3 non-clickable" > 
-    </div>
-
-    <div class="" style="background-color: #8f8f8f;">
-        <div class="uk-width-1-1 uk-background-cover uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-blend-multiply" style="mix-blend-mode: multiply; background-image: url(./storage/app/media/top-rock.jpg);" >
-        </div>
-    </div>
-    <div class="info-sec uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column" style="color: white; position:absolute;">
-        <div class="margin uk-margin-bottom">
-            <h3 class="strong-s" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; delay:;">"Perfection in the smallest details"</h3>
-
-            <h2 class="powerfull-s uk-heading-medium" uk-scrollspy="cls:uk-animation-fade; repeat:true; delay: " >Beautiful layouts</h2>
-
-            <hr uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; delay: 200">
-             
-            <div class="p-sec" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; ">
-                <p><span uk-icon="check"></span> Responsive for mobile</p>
-                <p><span uk-icon="check"></span> Custom design </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- third section -->
-
-<div  class="uk-section uk-margin-remove-top uk-height-viewport uk-flex-middle uk-flex uk-flex-center uk-child-width-1-1" uk-grid  >
-
-    <!-- scroll -->
-
-    <div id="section3" href="#second-section" class="scroll-1 non-clickable uk-height-viewport" > 
-    </div>
-    <div id="sec3"  uk-scrollspy="repeat:true;" class="scroll-2 non-clickable uk-height-viewport" uk-height-viewport="offset-bottom: true;"> 
     </div> 
     <div  class="scroll-3 non-clickable" > 
     </div>
@@ -147,56 +73,102 @@ is_hidden = 0
     </div>
     <div class="info-sec uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column" style="color: white; position:absolute;">
         <div class="uk-margin-bottom">
-            <h3 class="strong-s" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; delay:;">"Long-running Maintenance and CMS enabled"</h3>
+            <h3 class="strong-s" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; delay:;">All Will be taken care of by <span>the Website Wolf</span></h3>
 
-            <h2  class="powerfull-s uk-heading-medium" uk-scrollspy="cls:uk-animation-fade; repeat:true; delay: " >Ecommerce sites</h2>
+            <h2  class="powerfull-s uk-heading-medium" uk-scrollspy="cls:uk-animation-fade; repeat:true; delay: " >The path to your Website</h2>
 
             <hr uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; delay: 200">
              
 
             <div class="p-sec" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; ">
-                <p><span uk-icon="check"></span> Paypal or any other gateway </p>
-                <p><span uk-icon="check"></span> Direct card integration </p>
+                <!-- <p><span uk-icon="check"></span> Paypal or any other gateway </p>
+                <p><span uk-icon="check"></span> Direct card integration </p> -->
+                <a href="{{ 'faq' | page }}"> see FAQ</a>
             </div>
         </div>
     </div>
+
 </div>
 
+<!-- third section -->
 
-
-<!-- last section -->
-
-<div  class=" uk-flex uk-flex-bottom uk-margin-remove-top uk-section uk-height-viewport uk-child-width-1-1"   uk-grid style="position:relative; background-color:white;" >
+<!-- <div  class="uk-section uk-margin-remove-top uk-height-viewport uk-flex-middle uk-flex uk-flex-center uk-child-width-1-1" uk-grid  > -->
 
     <!-- scroll -->
 
-    <div id="sectionfinal" class="scroll-1 non-clickable uk-height-viewport" > 
+<!--     <div id="section3" href="#second-section" class="scroll-1 non-clickable uk-height-viewport" > 
     </div>
-    <div id="secfinal"  uk-scrollspy="repeat:true;" class="scroll-2 non-clickable uk-height-viewport" uk-height-viewport="offset-bottom: true;"> 
+    <div id="sec3"  uk-scrollspy="repeat:true;" class="scroll-2 non-clickable uk-height-viewport" uk-height-viewport="offset-bottom: true;"> 
     </div> 
     <div  class="scroll-3 non-clickable" > 
     </div>
 
-    <div class="last-sec uk-position-top uk-child-width-1-2@s uk-flex"  uk-grid>
-        <div class=" uk-text-center uk-flex uk-flex-middle uk-flex-center">
-            <h4 class="powerfull-s" style="color:black">Creativity & <br> Functionality</h4>
-            <p class="uk-visible@s"></p>
+    <div class="" style="background-color: #8f8f8f;">
+        <div class="uk-width-1-1 uk-background-cover uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-blend-multiply" style="mix-blend-mode: multiply;" data-src="./storage/app/media/top-rock.jpg" uk-img >
         </div>
-         <div class="guy uk-flex-first@s uk-flex uk-flex-middle uk-flex-center uk-text-center uk-width-1-1">
+    </div>
+
+    <div class="info-sec uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column" style="color: white; position:absolute;">
+        <div class="margin uk-margin-bottom">
+            <h3 class="strong-s" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; delay:;">attractive layouts and easily managed</h3>
+
+            <h2 class="powerfull-s uk-heading-medium" uk-scrollspy="cls:uk-animation-fade; repeat:true; delay: " >Custom Designs</h2>
+
+            <hr uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; delay: 200">
+             
+            <div class="p-sec" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; ">
+                <a href="{{ 'portfolio' | page }}"> see lasest projects</a>
+            </div>
+        </div>
+    </div>
+</div>
+ -->
+
+
+<!-- last section -->
+
+<div  class=" uk-flex uk-flex-bottom uk-margin-remove-top uk-margin-remove uk-section uk-height-viewport uk-child-width-1-1"   uk-grid style="position:relative; background-color:white;" >
+
+    <!-- scroll -->
+
+    <div id="sectionfinal" class="scroll-1 non-clickable uk-height-viewport " >
+    </div>
+    <div id="secfinal"  uk-scrollspy="repeat:true;" class="scroll-2 non-clickable uk-height-viewport" uk-height-viewport="offset-bottom: true;" > 
+    </div> 
+    <div  class="scroll-3 non-clickable" > 
+    </div>
+   
+    <div class="last-sec uk-position-top uk-height-viewport uk-flex uk-child-1-1"  >
+        
+          <div class="uk-hidden@m curtain uk-background-cover uk-width-1-1 uk-flex uk-flex-middle uk-flex-center uk-text-center uk-child-width" data-src="./storage/app/media/curtain.jpg" uk-img>    
+          </div>
+
+          <div class="uk-visible@m curtain uk-background-cover uk-width-1-1 uk-flex uk-flex-middle uk-flex-center uk-text-center uk-child-width" data-src="./storage/app/media/curtain-big.jpg" uk-img> 
+          </div>
+
+    </div>
+    <div class="last-sec uk-position-top uk-height-viewport uk-flex">
+        <div class="p-sec uk-position-center-left uk-width-1-1" uk-scrollspy="cls:uk-animation-slide-bottom; repeat:true; ">
+            <div class="container">
+                <p>Delivering unique projects creatively is my passion.</p>
+                    <a href="{{ 'about' | page }}"> ABOUT ME</a>
+                    <a href="{{ 'contact' | page }}"> MESSAGE ME</a>
+            </div>
+        </div>
+        <!-- <div class="guy uk-flex uk-flex-middle uk-flex-center uk-text-center uk-width-1-2">
             <svg id="svg" style="--uk-animation-stroke: 300; display:none"  viewBox="0 0 100 125" class="uk-animation-stroke uk-svg" width="400" height="400">
                 <path style="color:#110011;
                 " id="word" fill="none" stroke="#000" stroke-width="1" d="M82.5,22.4h-2.1c-0.3-1.4-0.9-2.8-1.6-4l1.5-1.5c0.4-0.4,0.4-0.9,0-1.3L78.5,14c-0.4-0.4-0.9-0.4-1.3,0l-1.5,1.5  c-1.2-0.8-2.5-1.4-4-1.6v-2.1c0-0.5-0.4-0.9-0.9-0.9h-2.5c-0.5,0-0.9,0.4-0.9,0.9v2.1c-1.4,0.3-2.8,0.9-4,1.6L62.1,14  c-0.4-0.4-0.9-0.4-1.3,0l-1.7,1.7c-0.4,0.4-0.4,0.9,0,1.3l1.5,1.5c-0.8,1.2-1.4,2.5-1.6,4h-2.1c-0.5,0-0.9,0.4-0.9,0.9v2.5  c0,0.5,0.4,0.9,0.9,0.9h2.1c0.3,1.4,0.9,2.8,1.6,4l-1.5,1.5c-0.4,0.4-0.4,0.9,0,1.3l1.7,1.7c0.4,0.4,0.9,0.4,1.3,0l1.5-1.5  c1.2,0.8,2.5,1.4,4,1.6v2.1c0,0.5,0.4,0.9,0.9,0.9h2.5c0.5,0,0.9-0.4,0.9-0.9v-2.1c1.4-0.3,2.8-0.9,4-1.6l1.5,1.5  c0.4,0.4,0.9,0.4,1.3,0l1.7-1.7c0.4-0.4,0.4-0.9,0-1.3l-1.5-1.5c0.8-1.2,1.4-2.5,1.6-4h2.1c0.5,0,0.9-0.4,0.9-0.9v-2.5  C83.4,22.8,83,22.4,82.5,22.4z M76.4,20.9h-2c-0.4-1.4-1-2.5-1.6-3.3C74.3,18.2,75.6,19.4,76.4,20.9z M70.5,17.2  c0.7,0.8,1.7,1.9,2.3,3.6h-2.3V17.2z M70.5,22.4h2.7c0.1,0.7,0.2,1.4,0.2,2.2c0,0.8-0.1,1.5-0.2,2.2h-2.7V22.4z M66.6,17.5  c-0.6,0.9-1.2,2-1.6,3.3h-2C63.8,19.4,65.1,18.2,66.6,17.5z M62,24.6c0-0.8,0.1-1.5,0.3-2.2h2.3c-0.1,0.7-0.2,1.4-0.2,2.2  s0.1,1.5,0.2,2.2h-2.3C62.1,26.1,62,25.3,62,24.6z M63,28.3h2c0.4,1.4,1,2.5,1.6,3.3C65.1,31,63.8,29.8,63,28.3z M68.9,31.9  c-0.7-0.8-1.7-1.9-2.3-3.6h2.3V31.9z M68.9,26.8h-2.7c-0.1-0.7-0.2-1.4-0.2-2.2c0-0.8,0.1-1.5,0.2-2.2h2.7V26.8z M68.9,20.9h-2.3  c0.6-1.7,1.5-2.9,2.3-3.6V20.9z M70.5,31.9v-3.6h2.3C72.1,30,71.2,31.2,70.5,31.9z M72.7,31.6c0.6-0.9,1.2-2,1.6-3.3h2  C75.6,29.8,74.3,31,72.7,31.6z M77.1,26.8h-2.3c0.1-0.7,0.2-1.4,0.2-2.2s-0.1-1.5-0.2-2.2h2.3c0.2,0.7,0.3,1.4,0.3,2.2  C77.4,25.3,77.3,26.1,77.1,26.8z M70.2,42.1l-14.1-4l-6.6-10.4l0,0c-0.1-0.1-0.1-0.2-0.2-0.3c-0.7-0.7-2.2-1.9-3-2.5l0,0  c-3.3-2.4-6.4-4-7.1-4.4c-0.1,0-0.2-0.1-0.2-0.2l0-2.6c0.4-0.8,0.6-1.6,0.8-2.4c0.1,0.1,0.2,0.1,0.3,0.1c0.3,0,0.8-0.4,1.3-2.2  c0.5-1.8,0.2-2.4-0.2-2.6c1.5-6.9-1.8-7.2-1.8-7.2s-0.5-1-1.8-1.7C36.7,1.3,35.7,1,34.4,1c-0.2,0-0.4,0-0.6,0c-0.5,0-1,0.1-1.5,0.3  l0,0c-0.6,0.2-1.1,0.5-1.6,0.8C30,2.5,29.5,2.9,29,3.5c-0.8,0.8-1.5,1.9-1.8,3.2c-0.3,1.1-0.3,2.3,0.1,3.5c0,0-0.1,0-0.1,0  c-0.6,0-1.1,0.4-0.5,2.6c0.5,1.7,0.9,2.2,1.3,2.2c0.1,1,0.4,2.1,1,3l0,2.2c0,0.1-0.1,0.2-0.2,0.2c-0.8,0.4-5,2.5-8.9,5.7  c-0.5,0.4-0.9,1.1-1,1.7l0,0l-1.9,12.2c-0.3,1.8-0.3,3.7,0,5.5l2.1,13.9c0.2,1.4,1.5,2.4,2.9,2.3c1.1-0.1,2-0.8,2.4-1.8l2.7,36.7  C26.9,98,28,99,29.3,99l8.4,0c1.3,0,2.4-1,2.5-2.3l3.1-37.5l2.5-22.5l4.2,5.9c0.6,0.8,1.4,1.4,2.4,1.6l16.5,3.2  c1.4,0.3,2.8-0.6,3.1-1.9C72.4,44,71.6,42.5,70.2,42.1z M33.8,43.2l-2.4-2.7l1.6-13.2c-3.1-4.4,0.3-4.6,0.8-4.6h0h0  c0.6,0,3.9,0.2,0.8,4.6l1.5,13.2L33.8,43.2z"></path></svg>
   
-          </div>
+          </div> -->
     </div>
 
 
-    <footer id="footer" class=" uk-height-small uk-flex-bottom main-color">
+    <!-- <footer id="footer" class=" uk-height-small uk-flex-bottom main-color">
 
     {% partial 'footer' %}
 
-    </footer>
+    </footer> -->
     </div>
-</div>
 
 

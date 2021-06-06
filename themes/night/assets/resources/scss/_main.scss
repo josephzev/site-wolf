@@ -1,13 +1,14 @@
 // Custom styles
 // =================================================
 
+$color:#CC0000; 
+$background-color: #110011;
+
 html{
        font-family: 'Source Sans Pro', sans-serif;
 }
 body{
-	@media (min-width: $breakpoint-small) {
 	        overflow-x: hidden;
-	    }
 }
 
 .non-clickable{
@@ -15,6 +16,9 @@ body{
 }
 /*nav*/
 
+.active{
+	color: $color;
+}
 .red{
 	color: #CC0000 ;
 }
@@ -45,9 +49,11 @@ body{
 }
 .nav-large{
 	transition: all 0.9s ease 0s;
+	z-index:1000;
 }
 .nav-small{
 	transition: all 0.9s ease 0s;
+	z-index:1000;
 }
 .close-nav{
 	display: flex;
@@ -87,8 +93,8 @@ body{
 /*main*/
 
 .top-width{
+
 	@media (max-width: 470px) {
-	    width: 250px;
 	}
 }
 
@@ -127,7 +133,7 @@ body{
 @media (min-width: $breakpoint-medium) {
 	.powerfull{
 		letter-spacing: 1.8px;
-	    font-size: 67px;
+	    font-size: 55px;
 	    font-weight: 600;
 	     margin-bottom: 0px;
 	}
@@ -162,17 +168,18 @@ body{
 .info-sec{
 	text-align:center;
 	padding-top: 60px;
-
 	.margin{
 		margin-bottom:20px ;
 		@media (min-width: $breakpoint-small) {
 	        margin-bottom: 85px;
 	    }
 	}
-
+	span{
+		color: #CC0000;
+        font-weight: 600;
+	}
 	.powerfull-s{
 		font-family: 'Source Sans Pro', sans-serif;
-	    font-size: 49px;
 	    text-align: center;
 	    line-height: 1;
 	    padding: 1rem;
@@ -181,10 +188,11 @@ body{
         margin:0;
         margin-bottom:40px;
         color:white;
-        font-size: 65px;
+        font-size: 55px;
 
         @media (min-width: $breakpoint-small) {
 	        margin-bottom:0px;
+	        font-size: 65px;
 	    }
         @media (min-width: $breakpoint-medium) {
 	        font-weight :400px;
@@ -195,9 +203,6 @@ body{
 	    }			
 	}
 	.strong-s{
-
-		
-
 		font-family: 'Source Sans Pro', sans-serif;
         margin:0;
         margin-bottom:10px;
@@ -207,17 +212,14 @@ body{
 	    font-weight: 500;
 	    text-shadow: 0 0 15px rgb(0 0 0 / 30%);
 	    font-size:15px;
-
 	    @media (min-width: $breakpoint-small) {
-	        font-size: 25px;
+	        font-size: 21px;
 	        margin:0;
-	    }
-		
+	    }		
 		@media (min-width: $breakpoint-medium) {
-	        font-size: 30px;
+	        font-size: 23px;
 	    }
 	}
-
 	hr{
         margin:auto;
         margin-top: 20px;
@@ -284,8 +286,79 @@ body{
 	    padding-top: 80px;
 	    width: 100%;
 	    height: 100%;
-	    padding-bottom: 150px;
+	    padding-left:0;
+  
+	.curtain{
+           opacity:0.4;
+	    }
+	.p-sec{
+		.container{
+			margin-right: auto;
+		    margin-top: -120px;
+		    margin-left: 34px;
+		    max-width: 164px;
+		    @media (min-width: 480px ) {
+		        max-width: 222px;
+	        }  
+			@media (min-width: $breakpoint-small) {
+		        max-width:518px;
+				margin-left: auto;
+	        }  
+	        @media (min-width: $breakpoint-medium) {
+		        max-width:918px;
+				margin-left: auto;
+                margin-top: -80px;
 
+	        }  
+			p{
+			    font-size: 19px;
+			    color: #212121;
+			    font-weight: 600;
+			    @media (min-width: $breakpoint-small) {
+		         max-width: 265px;
+		         font-size: 21px;
+	        }  
+			    @media (min-width: $breakpoint-medium) {
+		         font-size: 22px;
+		         max-width: none;
+	        }  
+			}
+		}
+	}    
+    a{
+        text-transform: uppercase;
+	    font-size: 10px;
+	    letter-spacing: 1.4px;
+	    font-family: 'MuseoSans',sans-serif;
+	    line-height: 1.4;
+	    font-weight: 100;
+	    border-radius: 5px;
+	    color: #474747;;
+	    border:0.5px solid gray;
+	    border-radius:4px;
+	    padding:8px;
+	    transition: all 0.5s;
+	    display: block;
+	    max-width: 130px;
+	    margin-top: 14px;
+	    text-align: center;
+	    padding-left: 0px;
+        padding-right: 0px;
+	    @media (min-width: $breakpoint-medium) {
+		            display: inline-block;
+					margin-left: 38px;
+					margin-top: 13px;
+					padding-left: 25px;
+					padding-right: 25px;
+					font-size: 13px;
+
+	        }  
+	    &:hover{
+	    	text-decoration: none;
+	    	background-color:#474747;;
+	    	color:#fff;
+	    }
+    }
 
 
 	h4{
@@ -314,11 +387,13 @@ body{
 	}
 
 	.guy{
-		margin-left: auto;
         margin-right: auto;
 		width: 310px;
+		margin-left:-20px;
+		opacity:0.4;
 		@media (min-width: $breakpoint-small) {
 	        width: 315px;
+	        margin-left:55px;
 	    }	
         @media (min-width: $breakpoint-medium) {
 	        width: 400px;
@@ -350,7 +425,7 @@ body{
 .hey{
 	color: #202020;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 40px;
+    font-size: 34px;
     letter-spacing: 0.8px;
     line-height: 1;
 }
@@ -377,41 +452,64 @@ body{
 
 /*about*/
 
-.about{
-	text-transform: uppercase;
-    font-weight: 700;
-    font-size: 80px;
-    color: #ffffff;
-    font-family: 'futura-pt', sans-serif;
-    line-height: 1.1;
-    text-shadow: 0 15px 30px rgb(0 0 0 / 12%);
-    z-index: -1;
-    text-align: center;
-    @media (min-width: $breakpoint-small) {
-	          font-size: 220px;
-	        }   
-}
-.para{
-	z-index: 1;
-    color: #1f1e1d;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.6px;
-    font-size: 14px;
-    @media (min-width: 465px) {
-	          font-size: 15px;
-	        }
-    @media (min-width: $breakpoint-small) {
-	          font-size: 16px;
-	        }
-    @media (min-width: $breakpoint-medium) {
-	          font-size: 17px;
-	        }   
-    @media (min-width: $breakpoint-large) {
-	          font-size: 19px;
-	        }   
-}
+.about-page{
 
+	    .first-sec{
+	    	max-width: 1400px;
+	    }
+       
+		.about{
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 80px;
+			color: #ffffff;
+			font-family: 'futura-pt', sans-serif;
+			line-height: 1.1;
+			text-shadow: 0 15px 30px rgb(0 0 0 / 12%);
+			z-index: -1;
+			text-align: center;
+			@media (min-width: $breakpoint-small) {
+			          font-size: 220px;
+			        }   
+		}
+		.para{
+			z-index: 1;
+			color: #1f1e1d;
+			font-family: 'Heebo', sans-serif;
+			font-weight: 300;
+			letter-spacing: 0.6px;
+			font-size: 14px;
+			@media (min-width: 465px) {
+			          font-size: 15px;
+			        }
+			@media (min-width: $breakpoint-small) {
+			          font-size: 16px;
+			        }
+			@media (min-width: $breakpoint-medium) {
+			          font-size: 17px;
+			        }   
+			@media (min-width: $breakpoint-large) {
+			          font-size: 19px;
+			        }   
+		}
+		.sections{
+			    max-width: 1200px;
+			    margin-left: auto;
+			    margin-right: auto;
+			    margin-top:0;
+		}
+		.img-container{
+			height:300px;
+			@media (min-width: $breakpoint-small) {
+			          height:400px;
+			        }
+			
+			div{
+				 background-position: top;
+			}        
+		}
+
+}
 
 /*svg*/
 
@@ -434,4 +532,223 @@ body{
   to {
     stroke-dashoffset: 1000;
   }
+}
+
+/*portfoilio*/
+
+.portfolio{
+	.img{
+		height:200px;
+		@media (min-width: $breakpoint-small) {
+	          height:300px;
+	        }
+	}
+	h3{
+		margin-top: 20px;
+	}
+	p{
+		color: #fff;
+	}
+}
+
+/*services*/
+
+.overflow-none{
+	
+}
+.services-width{
+	max-width:1000px;
+}
+
+.services{
+	    background-color: #8f8f8f;
+	    overflow: hidden;
+	    
+	.width{
+		max-width:600px;
+	}
+	.service{
+		color:#fff;
+	}
+	.img-left{
+		transition:all 1s;
+		width: 300px;
+        height: 300px;
+		
+		margin-left: auto;
+		margin-right: auto;
+        &:hover{
+        	display:none;
+        }
+
+	}
+	.img-right{
+		transition:all 1s;
+		width: 300px;
+        height: 300px;
+		margin-right: auto;
+		margin-left:auto;
+		&:hover{
+        	display:none;
+        }
+	}
+	.invisible{
+		left: 20px;
+	}
+
+	.inline{
+		top: -55px;
+		right: 0px;
+		transition:all 1s;
+		max-width:90%;
+	}
+	.inline-right{
+		top: -55px;
+		right: 0px;
+		transition:all 1s;
+		max-width:450px;
+	}
+	h2{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 35px;
+		line-height: 1;
+		font-weight: 300;
+		letter-spacing: 1.8px;
+		margin: 0;
+		color: white;
+		padding: 15px;
+		padding-left: 0;
+	}
+	p{
+		transition:all 1.5s;
+	}
+	.last-p{
+		font-style: oblique;
+		margin-bottom: 0;
+	}
+	.paragraph{
+		max-width:400px;
+	    font-weight: 300;
+	    letter-spacing: 0.6px;
+	    strong{
+	    	font-weight: 700;
+	    }
+	}
+	.down{
+		width:30px;
+		margin-left:auto;
+		margin-right:auto;
+      a{
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		color:#fff;
+		&:hover{
+			text-decoration: none;
+		}
+		.line{
+		    height: 23px;
+			width: 0.1px;
+			border: solid 0.1px $color;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: -24px;
+			margin-top: 7px;
+			display:none;
+
+		}
+		span{
+			margin-top:6px;
+		}
+	  }
+	  a:hover .line{
+	  	display:block;
+	  }
+	  a:hover span{
+	  	color:$color;
+	  }
+	}
+    
+}
+.arrow-service{
+		span{
+			color:#fff;
+		}
+	}
+
+.faq-sec{
+	padding-top:100px;
+	z-index:100;
+	max-width: 500px;
+	margin-left:auto;
+	margin-right:auto;
+	color:#fff;
+	padding-left: 10px;
+    padding-right: 10px;
+	.section{
+        box-shadow: 0 5px 15px rgb(0 0 0);
+        padding: 11px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        .question{
+        	padding-bottom: 10px;
+        }
+	}
+	p{
+		font-size:16px;
+		margin-top: 10px;
+		@media (min-width: $breakpoint-small) {
+	          font-size: 18px;
+	        }
+	}
+	a{
+		font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        @media (min-width: $breakpoint-small) {
+	          font-size: 23px;
+	        }
+        &:hover{
+        	text-decoration: none;
+        }
+	}
+}
+.phone{
+	max-width: 400px;
+	padding-top:40px;
+	margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom:0;
+    color:#fff;
+    z-index:100;
+	.img{
+		height: 150px;
+		@media (min-width: $breakpoint-small) {
+	          height:200px;
+	        }
+	}
+}
+#service:hover #img{
+	display:none;
+}
+#service2:hover #img2{
+	display:none;
+}
+
+/*scrollbar*/
+
+::-webkit-scrollbar
+{
+  width: 8px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.4);
 }

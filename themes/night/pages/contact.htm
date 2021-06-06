@@ -5,28 +5,7 @@ is_hidden = 0
 
 [contactForm]
 ==
-<!-- nav modal -->
-
-<div id="modalnav" class="nav-small uk-modal-full" uk-modal style="background-color: #110011">
-    <div class="uk-modal-dialog">
-        <button class="close-nav uk-modal-close-default"  style="color: white;" type="button" uk-close></button>
-        <div class="uk-height-viewport uk-flex uk-flex-middle uk-flex-center uk-text-center" uk-height-viewport="offset-top: true" style="background-color: #110011">
-            <div class="uk-width-auto uk-text-large uk-text-normal">
-                <ul class="uk-nav uk-nav-default uk-light" >
-                    <li class=""><a class="nav-link-small uk-text-large" style="color: white;" href="{{ 'contact' | page }}">
-                        <div uk-toggle="target: #con; cls: red; mode: hover; duration:500;  mode: media; media: @s; " id="con">CONTACT</div></a></li>
-                     <li class="uk-nav-divider"></li>
-                    <li><a class="nav-link-small uk-text-large" style="color: white;" href="{{ 'about' | page }}">
-                        <div uk-toggle="target: #ab; cls: red; mode: hover; duration:500;  mode: media; media: @s; " id="ab">ABOUT</div></a></li>
-                     
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    </div>
-</div>
-
+{% partial 'nav-white' %}
 <!-- contact-modal -->
 
 <div id="modal-contact" uk-modal>
@@ -51,35 +30,6 @@ is_hidden = 0
     </div>
 </div>
 
-<!-- nav large -->
-
-   <div class=" uk-position-top" >
-        <nav  class="nav-large uk-position-z-index uk-navbar-container uk-navbar-transparent uk-visible@m" uk-navbar>
-            <div class=" uk-navbar-left">
-                <a class="logo uk-navbar-item uk-logo" href="{{ 'home' | page }}"><span style="background-color: #CC0000; padding:5px;color:white; 
-                    font-size: 20px;">The Website Wolf</span></a>
-            </div>
-            <div class="uk-dark uk-margin-right uk-navbar-right">
-                <ul class="uk-navbar-nav">
-                    <li class=""><a class="uk-link-reset" style="cursor: default;" href="{{ 'about' | page }}"><div class="nav-link" uk-toggle="target: #about; cls: red; mode: hover; duration:500; " id="about">ABOUT</div></a></li>
-                    <li><a class="uk-link-reset" style="cursor: default;"  href="{{ 'contact' | page }}" ><div class="nav-link" uk-toggle="target: #contact; cls: red; mode: hover; duration:500; " id="contact" style="color:#CC0000;">CONTACT</div></a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <!-- nav small -->
-    
-    <div class="uk-position-top">
-        <nav id="nav" class="uk-height-veiwport nav-small uk-navbar-container uk-navbar-transparent uk-hidden@m" uk-sticky uk-navbar >
-            <div class="uk-light uk-navbar-left">
-                <a class="logo uk-navbar-item uk-logo" href="{{ 'home' | page }}"><span style="background-color: #CC0000; padding:5px;">The Website Wolf</span></a>
-            </div>
-            <div class="uk-light uk-margin-right uk-navbar-right">
-                <a class="uk-navbar-toggle" style="color: black;" uk-navbar-toggle-icon uk-toggle href="#modalnav"></a>
-            </div>
-        </nav>
-    </div>
 
 <!-- main -->
 <div>
@@ -92,16 +42,16 @@ is_hidden = 0
                 <div class="uk-margin-large-top">
                     <div class="uk-container">
                         <h1 class="uk-heading hey">
-                            Hey there,
+                            Hey,
                         </h1>
                         <p class="lets-make">
-                            Let's make your project happen, send me an email or message me here.
+                            shoot me a message about your idea.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- eamail, message -->
+            <!-- email, message -->
 
             <hr class="con-hr uk-divider-icon uk-margin-right uk-margin-left uk-margin-large-top@s">
             <div class="con-wrapper uk-container uk-margin-large-top uk-child-width-1-2@s uk-text-left uk-text-center@s " uk-grid>
