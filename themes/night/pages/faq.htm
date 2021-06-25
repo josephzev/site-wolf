@@ -7,68 +7,46 @@ is_hidden = 0
 
 <div class="scrollbar">
 
-	<!-- <div class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle services uk-background-cover uk-position-relative">
-		<div class="uk-position-absolute uk-width-1-1 uk-height-1-1 uk-background-cover " data-src="./storage/app/media/ship.jpg" uk-img></div>
+	
+    <!-- sunflower -->
 
-		
+    <div id="" class="sunflower uk-section uk-light uk-height-viewport uk-flex-middle uk-flex  uk-child-width-1-1" uk-grid >
 
-        <div id="section-service" class="scroll-1 non-clickable uk-height-viewport" style="width:100px;"> 
+
+
+        <!-- <div id="section1"  class="non-clickable uk-height-viewport" style="position: absolute; width: 100px;">  
+        </div>  -->
+
+        <!-- scroll -->
+
+        <div id="section1" class="uk-margin-remove scroll-1 non-clickable uk-height-viewport" style="width:100px;"> 
         </div>
-        <div id="sec-service"  class="scroll-2 non-clickable uk-height-viewport" uk-height-viewport="offset-bottom: true;" style="width:100px;"> 
+        <div id="sec1"  class="scroll-2 non-clickable uk-height-viewport" uk-height-viewport="offset-bottom: true;" style="width:100px;"> 
         </div> 
         <div  class="scroll-3 non-clickable" style="width:100px;"> 
         </div>
 
-		<div class="uk-margin-remove uk-width-1-1 services-width" >
+        <div class="uk-position-cover uk-height-viewport uk-margin-remove uk-padding-remove" style="background-color: #8f8f8f;">
+            <div class="uk-visible@m uk-width-1-1 uk-background-cover uk-height-viewport uk-flex uk-flex-center uk-flex-middle" data-src="./storage/app/media/sunflower-wide.jpg" uk-img >
+            </div>
+            <div class="uk-hidden@m uk-width-1-1 uk-background-cover uk-height-viewport uk-flex uk-flex-center uk-flex-middle" data-src="./storage/app/media/sunflower-tall.jpg" uk-img >
+            </div>
+        </div>
 
-			
 
-
-
-			<div id="service" class="uk-border-rounded uk-padding-remove  uk-position-relative  service uk-transition-toggle" tabindex="0" href="">
-			   <div id="img" class="uk-background-cover uk-border-rounded uk-height-1-1 img-left" data-src="./storage/app/media/design.jpg" uk-img alt=""></div>
-			   <div id="card" class="uk-transition-scale-up uk-position-absolute uk-width-1-1 uk-height-medium inline uk-text-center ">
-			   	<div class="paragraph">
-			   	<h2>Design Package</h2>
-			   	  <div class="uk-transition-slide-bottom ">
-				   	<strong>Main Focus</strong>
-				   	<p >Designing and oulaying your content throuhout the website, and creating a beautiful landing page.</p>
-			          <strong>Good For</strong>
-			          <p >an online presence to represent you and your work/business.
-			          </p>
-			          <p class="last-p">youl be able to log in to the backend of your site and easily add, remove and change things, based on the custom build we decide on.</p>
-			         
-			      </div>
-			    </div>
-			   </div>	
-			</div>
-
-			<div id="service" class="uk-border-rounded uk-padding-remove  uk-position-relative  service uk-transition-toggle" tabindex="0" href="">
-			   <div id="img" class="uk-background-cover uk-border-rounded uk-height-1-1 img-left" data-src="./storage/app/media/design.jpg" uk-img alt=""></div>
-			   <div id="card" class="uk-transition-scale-up uk-position-absolute uk-width-1-1 uk-height-medium inline uk-text-center ">
-			   	<div class="paragraph">
-			   	<h2>Design Package</h2>
-			   	  <div class="uk-transition-slide-bottom ">
-				   	<strong>Main Focus</strong>
-				   	<p >Designing and oulaying your content throuhout the website, and creating a beautiful landing page.</p>
-			          <strong>Good For</strong>
-			          <p >an online presence to represent you and your work/business.
-			          </p>
-			          <p class="last-p">youl be able to log in to the backend of your site and easily add, remove and change things, based on the custom build we decide on.</p>
-			          
-			      </div>
-			    </div>
-			   </div>	
-			</div>
-		</div>
-
-		<div class="uk-position-bottom-center arrow-service"> 
-			<a href="#faq-page" uk-scroll id="faq" class="">
-		      	<span class="" uk-icon="icon: chevron-down; ratio: 3.5"></span>
-	        </a>
-		</div>
-	</div> -->
-
+        <div class="top-width uk-margin-large-bottom uk-light uk-text-right">
+            
+                <h1 class="powerfull text uk-heading-medium uk-text-bold " uk-scrollspy="cls:uk-animation-fade; delay:200; repeat:true;">
+                    how<br> does this<br> work?
+                </h1>
+            
+            <p class="uk-position-bottom uk-text-center uk-margin-large-bottom" uk-scrollspy="cls:uk-animation-slide-bottom; delay:1200; repeat:true;">
+                <a href="#section2" uk-scroll class="arrow uk-margin-large-top " uk-icon="icon: chevron-down; ratio: 3" >   
+                </a>
+            </p>
+       </div>
+       
+</div>
 
 <!-- faq -->
 
@@ -85,7 +63,7 @@ is_hidden = 0
         </div>
 
 
-        <div class="faq-sec">
+        <div class="faq-sec uk-child-width-1-2" uk-grid>
         	<div class="section uk-card" tabindex="0" uk-toggle="target: #answer; cls: uk-hidden;">
 			    <div class="question">
 			    	<a >
@@ -110,6 +88,18 @@ is_hidden = 0
 			    	while hosting varies from around 60$ - 100$ a year depending on how big your site is.</p>
 			    </div>
 		   </div>
+
+		   <div class="section uk-card" tabindex="0" uk-toggle="target: #answer3; cls: uk-hidden;">
+			    <div class="question">
+			    	<a>
+			    		Can you take care of hosting?
+			    	</a>
+			    </div>
+			    <div id="answer3" class="uk-hidden">
+			    	<p>Yes,<br>
+			    	I offer hosting services, first year free, and after starting from 60$ a year, again, depending of the size of your site.</p>
+			    </div>
+		   </div> 
 
 		   <div class="section uk-card" tabindex="0" uk-toggle="target: #answer3; cls: uk-hidden;">
 			    <div class="question">
