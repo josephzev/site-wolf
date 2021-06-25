@@ -12368,6 +12368,15 @@ body {
 }
 
 /*main*/
+.top-width {
+  margin-bottom: 136px;
+}
+@media (min-width: 960px) {
+  .top-width {
+    margin-bottom: 40px;
+  }
+}
+
 .powerfull {
   font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 0px;
@@ -12445,6 +12454,14 @@ body {
 .info-sec {
   text-align: center;
   padding-top: 60px;
+}
+.info-sec .center-container {
+  margin-bottom: 140px;
+}
+@media (min-width: 640px) {
+  .info-sec .center-container {
+    margin-bottom: 60px;
+  }
 }
 .info-sec .margin {
   margin-bottom: 20px;
@@ -13094,7 +13111,7 @@ body {
   padding-right: 10px;
 }
 .faq-sec .section {
-  box-shadow: 0 1px 6px darkgrey;
+  box-shadow: 0 0px 6px darkgrey;
   border-radius: 10px;
   padding: 11px;
   cursor: pointer;

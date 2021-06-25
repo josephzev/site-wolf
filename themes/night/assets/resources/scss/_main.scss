@@ -105,9 +105,11 @@ body{
 /*main*/
 
 .top-width{
+	margin-bottom: 136px;
+  @media (min-width: $breakpoint-medium) {
+	  margin-bottom: 40px;
+}
 
-	@media (max-width: 470px) {
-	}
 }
 
 .powerfull{
@@ -180,6 +182,12 @@ body{
 .info-sec{
 	text-align:center;
 	padding-top: 60px;
+	.center-container{
+		 margin-bottom: 140px;
+		 @media (min-width: $breakpoint-small) {
+	        margin-bottom: 60px;
+	    } 
+	}
 	.margin{
 		margin-bottom:20px ;
 		@media (min-width: $breakpoint-small) {
@@ -800,7 +808,7 @@ body{
 	padding-left: 10px;
     padding-right: 10px;
 	.section{
-        box-shadow: 0 1px 6px darkgrey;
+        box-shadow: 0 0px 6px darkgrey;
         border-radius: 10px;
         padding: 11px;
         cursor: pointer;
