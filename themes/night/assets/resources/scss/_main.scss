@@ -784,6 +784,10 @@ body{
     line-height: 88px;
     font-size: 62px;
     font-weight: 500;
+    margin-bottom: 110px;
+    @media (min-width: $breakpoint-medium) {
+	          margin-bottom: 0;
+	        }
 	}
 }
 .faq-sec{
@@ -796,10 +800,11 @@ body{
 	padding-left: 10px;
     padding-right: 10px;
 	.section{
-        box-shadow: 0 5px 15px rgb(0 0 0);
+        box-shadow: 0 1px 6px darkgrey;
+        border-radius: 10px;
         padding: 11px;
-        margin-bottom: 10px;
         cursor: pointer;
+        margin-top: 0px;
         .question{
         	padding-bottom: 10px;
         }

@@ -13075,6 +13075,12 @@ body {
   line-height: 88px;
   font-size: 62px;
   font-weight: 500;
+  margin-bottom: 110px;
+}
+@media (min-width: 960px) {
+  .sunflower .text {
+    margin-bottom: 0;
+  }
 }
 
 .faq-sec {
@@ -13088,10 +13094,11 @@ body {
   padding-right: 10px;
 }
 .faq-sec .section {
-  box-shadow: 0 5px 15px black;
+  box-shadow: 0 1px 6px darkgrey;
+  border-radius: 10px;
   padding: 11px;
-  margin-bottom: 10px;
   cursor: pointer;
+  margin-top: 0px;
 }
 .faq-sec .section .question {
   padding-bottom: 10px;
