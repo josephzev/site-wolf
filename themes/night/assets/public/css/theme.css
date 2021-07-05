@@ -12373,7 +12373,7 @@ body {
 }
 @media (min-width: 960px) {
   .top-width {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 }
 
@@ -13101,9 +13101,10 @@ body {
 }
 
 .faq-sec {
+  background-color: black;
   padding-top: 100px;
   z-index: 100;
-  max-width: 500px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
@@ -13111,11 +13112,13 @@ body {
   padding-right: 10px;
 }
 .faq-sec .section {
+  width: 47%;
   box-shadow: 0 0px 6px darkgrey;
   border-radius: 10px;
   padding: 11px;
   cursor: pointer;
-  margin-top: 0px;
+  margin-top: 150px;
+  min-height: 380px;
 }
 .faq-sec .section .question {
   padding-bottom: 10px;
