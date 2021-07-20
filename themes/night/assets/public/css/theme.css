@@ -12323,11 +12323,25 @@ body {
 .nav-large {
   transition: all 0.9s ease 0s;
   z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-large a {
+  border: none;
+}
+.nav-large a:hover {
+  background-color: transparent;
 }
 
 .nav-small {
   transition: all 0.9s ease 0s;
   z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-small a {
+  border: none;
+}
+.nav-small a:hover {
+  background-color: transparent;
 }
 
 .close-nav {
@@ -12394,9 +12408,9 @@ body {
 
 @media (min-width: 640px) {
   .powerfull {
-    font-size: 54px;
-    line-height: 1;
-    font-weight: 300;
+    font-size: 70px;
+    line-height: 1.3;
+    font-weight: 500;
     letter-spacing: 1.8px;
     margin-bottom: 0px;
   }
@@ -12414,7 +12428,8 @@ body {
 @media (min-width: 960px) {
   .powerfull {
     letter-spacing: 1.8px;
-    font-size: 55px;
+    font-size: 72px;
+    line-height: 1.4;
     font-weight: 600;
     margin-bottom: 0px;
   }
@@ -12592,7 +12607,6 @@ body {
 }
 
 .last-sec {
-  padding-top: 80px;
   width: 100%;
   height: 100%;
   padding-left: 0;
@@ -12605,43 +12619,40 @@ body {
   margin-top: -120px;
   margin-left: 34px;
   max-width: 164px;
+  max-width: 518px;
+  margin-left: auto;
 }
 @media (min-width: 480px) {
   .last-sec .p-sec .container {
     max-width: 222px;
   }
 }
-@media (min-width: 640px) {
-  .last-sec .p-sec .container {
-    max-width: 518px;
-    margin-left: auto;
-  }
-}
 @media (min-width: 960px) {
-  .last-sec .p-sec .container {
+  .last-sec .p-sec {
     max-width: 918px;
     margin-left: auto;
     margin-top: -80px;
   }
 }
-.last-sec .p-sec .container p {
+.last-sec .p-sec p {
   font-size: 19px;
   color: #212121;
   font-weight: 600;
 }
 @media (min-width: 640px) {
-  .last-sec .p-sec .container p {
+  .last-sec .p-sec p {
     max-width: 265px;
     font-size: 21px;
   }
 }
 @media (min-width: 960px) {
-  .last-sec .p-sec .container p {
+  .last-sec .p-sec p {
     font-size: 22px;
     max-width: none;
   }
 }
-.last-sec a {
+
+a {
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 1.4px;
@@ -12662,7 +12673,7 @@ body {
   padding-right: 0px;
 }
 @media (min-width: 960px) {
-  .last-sec a {
+  a {
     display: inline-block;
     margin-left: 38px;
     margin-top: 13px;
@@ -12671,12 +12682,13 @@ body {
     font-size: 13px;
   }
 }
-.last-sec a:hover {
+a:hover {
   text-decoration: none;
   background-color: #474747;
   color: #fff;
 }
-.last-sec h4 {
+
+h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 49px;
   text-align: center;
@@ -12689,35 +12701,36 @@ body {
   font-size: 40px;
 }
 @media (min-width: 640px) {
-  .last-sec h4 {
+  h4 {
     margin-top: 0;
   }
 }
 @media (min-width: 960px) {
-  .last-sec h4 {
+  h4 {
     font-weight: 400px;
     font-size: 50px;
   }
 }
 @media (min-width: 1200px) {
-  .last-sec h4 {
+  h4 {
     font-size: 50px;
   }
 }
-.last-sec .guy {
+
+.guy {
   margin-right: auto;
   width: 310px;
   margin-left: -20px;
   opacity: 0.4;
 }
 @media (min-width: 640px) {
-  .last-sec .guy {
+  .guy {
     width: 315px;
     margin-left: 55px;
   }
 }
 @media (min-width: 960px) {
-  .last-sec .guy {
+  .guy {
     width: 400px;
     margin-top: 30px;
   }

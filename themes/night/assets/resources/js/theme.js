@@ -4,11 +4,15 @@ require('./bootstrap');
 /* YOUR CODE HERE */
 
 
-const mediaQuery = window.matchMedia('(max-width: 768px)')
+const mediaQuery = window.matchMedia('(max-width: 768px)') ;
+const navLarge = document.getElementById("nav1");
+const navSmall = document.getElementById("nav2");
+
 
 UIkit.util.on('#sec2', 'inview', function () {
     
         UIkit.scroll('#section2').scrollTo('#section2');
+        
 
         if (mediaQuery.matches) {
           document.getElementById("body").style.overflowY = "hidden";
@@ -18,10 +22,36 @@ UIkit.util.on('#sec2', 'inview', function () {
 });
 
 
+UIkit.util.on('#section2', 'scrolled', function () {
+
+        UIkit.scrollspy('#sec1', {
+	    		  
+	    		  repeat:true
+
+	    	});
+
+	    	document.getElementById("body").style.overflowY = "visible";
+
+	    	navLarge.style.backgroundColor = "transparent";
+	      navSmall.style.backgroundColor = "transparent";
+
+});
+
+
+
 UIkit.util.on('#sec1', 'inview', function () {
 	    
 	    UIkit.scroll('#section1').scrollTo('#section1');
+
 });
+
+UIkit.util.on('#section1', 'scrolled', function () {
+
+	    navLarge.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
+	    navSmall.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
+
+});
+
 
 
 UIkit.util.on('#sec3', 'inview', function () {
@@ -47,10 +77,11 @@ UIkit.util.on('#secfinal', 'inview', function () {
 	    
 	    UIkit.scroll('#sectionfinal').scrollTo('#sectionfinal');
 
-	    document.getElementById("nav1").style.backgroundColor = "#110011";
-	    document.getElementById("nav2").style.backgroundColor = "#110011";
+	    console.log('#someButton was clicked');
 
-	    document.getElementById("svg").style.display = "block";
+	    navLarge.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+	    navSmall.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+
 
 
 
@@ -59,27 +90,24 @@ UIkit.util.on('#secfinal', 'inview', function () {
 
 UIkit.util.on('#secfinal', 'outview', function () {
 
-	    
-	    document.getElementById("nav1").style.backgroundColor = "transparent";
-	    document.getElementById("nav2").style.backgroundColor = "transparent";
-
-	    document.getElementById("svg").style.display = "none";
-});
-
-
-
-
-/*first sec*/
-
-UIkit.util.on('#section2', 'scrolled', function () {
-
-            UIkit.scrollspy('#sec1', {
-	    		repeat:true
-	    	});
-
-	    	document.getElementById("body").style.overflowY = "visible";
 
 });
+
+
+
+
+
+
+
+/**/
+/**/
+/**/
+/**/
+
+
+
+
+
 
 
 

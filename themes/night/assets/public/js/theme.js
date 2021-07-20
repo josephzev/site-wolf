@@ -30,6 +30,8 @@ __webpack_require__(/*! ./bootstrap */ "./assets/resources/js/bootstrap.js");
 
 
 var mediaQuery = window.matchMedia('(max-width: 768px)');
+var navLarge = document.getElementById("nav1");
+var navSmall = document.getElementById("nav2");
 UIkit.util.on('#sec2', 'inview', function () {
   UIkit.scroll('#section2').scrollTo('#section2');
 
@@ -37,8 +39,20 @@ UIkit.util.on('#sec2', 'inview', function () {
     document.getElementById("body").style.overflowY = "hidden";
   }
 });
+UIkit.util.on('#section2', 'scrolled', function () {
+  UIkit.scrollspy('#sec1', {
+    repeat: true
+  });
+  document.getElementById("body").style.overflowY = "visible";
+  navLarge.style.backgroundColor = "transparent";
+  navSmall.style.backgroundColor = "transparent";
+});
 UIkit.util.on('#sec1', 'inview', function () {
   UIkit.scroll('#section1').scrollTo('#section1');
+});
+UIkit.util.on('#section1', 'scrolled', function () {
+  navLarge.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
+  navSmall.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
 });
 UIkit.util.on('#sec3', 'inview', function () {
   UIkit.scroll('#section3').scrollTo('#section3');
@@ -54,23 +68,19 @@ UIkit.util.on('#section3', 'scrolled', function () {
 
 UIkit.util.on('#secfinal', 'inview', function () {
   UIkit.scroll('#sectionfinal').scrollTo('#sectionfinal');
-  document.getElementById("nav1").style.backgroundColor = "#110011";
-  document.getElementById("nav2").style.backgroundColor = "#110011";
-  document.getElementById("svg").style.display = "block";
+  console.log('#someButton was clicked');
+  navLarge.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+  navSmall.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
 });
-UIkit.util.on('#secfinal', 'outview', function () {
-  document.getElementById("nav1").style.backgroundColor = "transparent";
-  document.getElementById("nav2").style.backgroundColor = "transparent";
-  document.getElementById("svg").style.display = "none";
-});
-/*first sec*/
+UIkit.util.on('#secfinal', 'outview', function () {});
+/**/
 
-UIkit.util.on('#section2', 'scrolled', function () {
-  UIkit.scrollspy('#sec1', {
-    repeat: true
-  });
-  document.getElementById("body").style.overflowY = "visible";
-});
+/**/
+
+/**/
+
+/**/
+
 /*services*/
 
 UIkit.util.on('#sec-faq', 'scrolled', function () {
